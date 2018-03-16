@@ -1,3 +1,25 @@
+div.section-bkg-wrapper {
+  background: #f7f7f7;
+  main#main {
+    h1 {
+      font-size: 2rem;
+      margin:0;
+    }
+    div.toggle-form{
+      a {
+        color: #78CCD6;
+      }
+    }
+
+  }
+}
+
+div#register-form {
+    h2 {
+    color: #78CCD6;
+  }
+}
+
 .login-register .form-field input, .financial-assistance-wrapper .financial-assistance-form .form-field input, .login-register .form-field select, .financial-assistance-wrapper .financial-assistance-form .form-field select, .login-register .form-field textarea, .financial-assistance-wrapper .financial-assistance-form .form-field textarea {
     display: block;
     height: 32px;
@@ -10,13 +32,13 @@
 
 
 select:focus, select:active, textarea:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="tel"]:focus {
-    border-color: #00e7ff;
-    box-shadow: 0 0 6px 0 #6f6f6f, inset 0 0 4px 0 rgba(0,0,0,0.15);
+    border: solid 2px #00e7ff;
+    box-shadow: initial;
 }
 
 .login-register .form-field select:active, .financial-assistance-wrapper .financial-assistance-form .form-field select:active, .login-register .form-field select:focus, .financial-assistance-wrapper .financial-assistance-form .form-field select:focus {
-	outline:0;
-	border-color: #00e7ff;	
+  outline:0;
+  border-color: #00e7ff;  
 }
 
 
@@ -69,15 +91,51 @@ login-register-content h2, .login-register-content .home>header .title>.heading-
     text-align: center;
 }
 
-div#content-container{
+div.section-bkg-wrapper {
+  text-align:center;
+}
+
+div#content-container {
   position:relative;
 }
 
+#main {
+  padding:20px;
+}
 
-div.color-border {
-  border: 4px solid #efff00;
-  width: 20%;
+
+div.color-border-1 {
+  border: 4px solid #8FC654;
+  width: 8%;
   float: left;
+}
+
+div.color-border-2 {
+  border: 4px solid #F9CA62;
+  width: 30%;
+  float: left;
+}
+
+div.color-border-3 {
+  border: 4px solid #2E2E2E;
+  width: 24%;
+  float: left;
+}
+
+div.color-border-4 {
+  border: 4px solid #F46565;
+  width: 30%;
+  float: left;
+}
+
+div.color-border-5 {
+  border: 4px solid #6EC7D3;
+  width: 8%;
+  float: left;
+}
+
+div.container-color{
+  width: 100%;
 }
 
 
@@ -89,7 +147,7 @@ div.triangle-input {
   width: 0;
   position: absolute;
   top: 27px;
-  margin-left: 50%;
+  margin-left: 48%;
   display:none
 }
 
