@@ -84,7 +84,7 @@
             </label>
         <% } %>
         <% if ( instructions ) { %> <span class="tip tip-input" id="<%= form %>-<%= name %>-desc"><%= instructions %></span><% } %>
-        <% if ( type !== 'checkbox' && type !== 'password' ) { %>
+        <% if ( type !== 'checkbox' && type !== 'password' && name != 'city'  ) { %>
             <div class="triangle-input" id="<%= form %>-<%= name %>-triangle" ></div>
         <% } %>    
     <% } %>

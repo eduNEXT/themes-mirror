@@ -147,10 +147,46 @@ div.triangle-input {
   width: 0;
   position: absolute;
   top: 27px;
-  margin-left: 48%;
+  @include margin-left(48%);
   display:none
 }
 
+
+.tt-suggestion.tt-selectable {
+  margin: 10px;
+}
+
+.tt-menu {
+  width: 100%;
+  top: 35px!important;
+  padding: 2px;
+  background-color: #fff;
+}
+
+.login-register .login-provider, 
+.financial-assistance-wrapper .financial-assistance-form .login-provider{
+  width: 198px;
+  height: 35px;
+  box-shadow: none;
+  border: 3px solid #4285F4;
+  color: #fff;
+  top: 0;
+  background: #4285F4;
+}
+
+button.button.button-primary.button-oa2-facebook.login-provider.register-oa2-facebook{
+  background: #4663A0;
+  border: 3px solid #4663A0;
+  color: #fff;
+}
+
+.login-register .login-provider .icon .icon-image {
+    margin-top: -7px;
+}    
+
+.login-register .login-provider .icon{
+  background:white;
+}
 
 div.form-field { 
   span.tip.tip-input {
