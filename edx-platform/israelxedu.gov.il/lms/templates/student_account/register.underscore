@@ -44,5 +44,10 @@
 
     <%= context.fields %>
 
-    <button type="submit" class="action action-primary action-update js-register register-button btn-client"><%- gettext("Create account") %></button>
+    <button type="submit" class="action action-primary action-update continue-button btn-client"><%- gettext("Continue") %></button>
+
+    <button type="submit" class="action action-primary action-update js-register register-button btn-client hidden "><%- gettext("Create account") %></button>
+
+    <button type="submit" class="action action-primary  back-button btn-client hidden"><%- gettext("back") %></button>
+
 </form>
