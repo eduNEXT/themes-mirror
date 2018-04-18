@@ -20,6 +20,11 @@ div#register-form {
   }
 }
 
+.login-register .login-provider:hover{
+  background:#4285F4;
+  border: 3.1px solid #4285F4;
+}
+
 .login-register .form-field input, .financial-assistance-wrapper .financial-assistance-form .form-field input, .login-register .form-field select, .financial-assistance-wrapper .financial-assistance-form .form-field select, .login-register .form-field textarea, .financial-assistance-wrapper .financial-assistance-form .form-field textarea {
     display: block;
     height: 32px;
@@ -38,7 +43,7 @@ select:focus, select:active, textarea:focus, input[type="text"]:focus, input[typ
 
 .login-register .form-field select:active, .financial-assistance-wrapper .financial-assistance-form .form-field select:active, .login-register .form-field select:focus, .financial-assistance-wrapper .financial-assistance-form .form-field select:focus {
   outline:0;
-  border-color: #00e7ff;  
+  border-color: #00e7ff;
 }
 
 
@@ -163,7 +168,7 @@ div.triangle-input {
   background-color: #fff;
 }
 
-.login-register .login-provider, 
+.login-register .login-provider,
 .financial-assistance-wrapper .financial-assistance-form .login-provider{
   width: 198px;
   height: 35px;
@@ -182,13 +187,13 @@ button.button.button-primary.button-oa2-facebook.login-provider.register-oa2-fac
 
 .login-register .login-provider .icon .icon-image {
     margin-top: -7px;
-}    
+}
 
 .login-register .login-provider .icon{
   background:white;
 }
 
-div.form-field { 
+div.form-field {
   span.tip.tip-input {
     background: #6EC7D3;
     border-radius: 6px;

@@ -25,7 +25,7 @@ ENEXT.cityValues = (function(){
     data.initialize(true);
 
     $(selector).typeahead({
-      hint: true,
+      hint: false,
       highlight: true,
       minLength: 1
     },
