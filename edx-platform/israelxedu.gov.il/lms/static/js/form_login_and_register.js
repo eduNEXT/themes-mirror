@@ -9,20 +9,21 @@ var fieldSecond = [".text-city",
                    ".textarea-goals",
                    ".select-year_of_birth",
                    ".select-level_of_education"]
+let  split = " ";
+let  joinElement = '_';
 
-      
-this.hiddenElements(fieldSecond); 
-    
+
+this.hiddenElements(fieldSecond);
+
 
 $(".continue-button").click(function() {
 
     $(".register-button").removeClass("hidden");
     $(".back-button").removeClass("hidden");
-    $(".continue-button").addClass("hidden");      
+    $(".continue-button").addClass("hidden");
     hiddenElements(fieldFirts);
     DisplayElements(fieldSecond);
-}) 
-
+})
 
 $(".back-button").click(function() {
 
@@ -31,9 +32,7 @@ $(".back-button").click(function() {
     $(".continue-button").removeClass("hidden");
     hiddenElements(fieldSecond);
     DisplayElements(fieldFirts);
-})  
-
-
+})
 
 function hiddenElements(field) {
     field.forEach(function(element) {
@@ -48,4 +47,14 @@ function DisplayElements(field) {
         $(fieldClass).removeClass("hidden");
     });
 }
-    
+
+$("#register-name").change(function(){
+  let name = $("#register-name").val().trim();
+  name = name.split(split);
+  name = name.filter(notSpace).join(joinElement);
+  $("#register-username").val(name.toLowerCase());
+});
+
+function notSpace(valor) {
+  return valor != "";
+}
